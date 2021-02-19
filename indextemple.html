@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.India'shistorypage.com</title>
+    <link rel="stylesheet" href="styletemple.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <h1>India:HistoryPage</h1>
+            </div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">NEWS</a>
+                <a href="#">PLACES</a>
+            </div>
+        </nav>
+        <div class="heading">
+            <h1>welcome to india:historypage</h1>
+        </div>
+
+        <section id="content">
+            <h2>here are some ancient hindu temples</h2>
+            <section class="images">
+                <div class="part1">
+                    <img id="slideimage" src="b2.jpg" alt="">
+                    <h2>BATHU KI LADI TEMPLE</h2>
+                    <p>Bathu temples (बाथू मंदिर), known locally as Bathu ki ladi (बाथू की लड़ी), is a cluster of
+                        temples in the Kangra district of Indian state of Himachal Pradesh, with the main temple
+                        dedicated to goddess Parvati and Lord Shiva. These temples were submerged in Maharana Pratap
+                        Sagar, a reservoir created by Pong dam in the early 1970s. Since then, these temples are only
+                        accessible from May to June when the water level decreases. The temples are accessible by boat
+                        from Dhameta and Nagrota Surian and accessible by road from Jawali. There are several small
+                        villages near the temple site, which includes Sugnara, Jarot, Bajera, Katnor, Khabal, Ludret,
+                        and Bhial.</p>
+                    <button id="button"><a target="_blank"
+                            href="https://www.beingpahadia.com/bathu-ki-ladi-hidden-temple-himachal-pradesh/">Click here
+                            to know more</a></button>
+                </div>
+                <div class="part2">
+                    <img id="slideimage1" src="h1.jpg" alt="">
+                    <h2>hoysaleshwara temple</h2>
+                    <p>Hoysaleswara temple, also referred simply as the Halebidu temple, is a 12th-century Hindu temple
+                        dedicated to Shiva. It is the largest monument in Halebidu, a town in the state of Karnataka,
+                        India and the former capital of the Hoysala Empire. The temple was built on the banks of a large
+                        man-made lake, and sponsored by King Vishnuvardhana of the Hoysala Empire.[1] Its construction
+                        started around 1121 CE and was complete in 1160 CE.[2][3] During the early 14th century,
+                        Halebidu was twice sacked and plundered by the Muslim armies of the Delhi Sultanate from
+                        northern India,[4][5][6] and the temple and the capital fell into a state of ruin and
+                        neglect.[7] It is 30 kilometres (19 mi) from Hassan city and about 210 kilometres (130 mi) from
+                        Bengaluru.[8]</p>
+                    <button id="button"><a target="_blank"
+                            href="https://en.wikipedia.org/wiki/Hoysaleswara_Temple">Click here to know
+                            more</a></button>
+                </div>
+            </section>
+        </section>
+        <h2 id="heading"> RELIGIOUS PLACES IN INDIA</h2>
+        <section id="main">
+            <div class="sub1">
+                <img src="jatoli temple.jpg" alt="">
+                <h2><a target="_blank"
+                        href="https://www.tourmyindia.com/states/himachal/jatoli-shiv-temple-solan.html">JATOLI SHIV
+                        MANDIR</a></h2>
+            </div>
+            <div class="sub2">
+                <img src="1000 lingas.jpg" alt="">
+                <h2><a target="_blank" href="https://en.wikipedia.org/wiki/Kbal_Spean">RIVER OF 1000 LINGAS</a></h2>
+
+            </div>
+            <div class="sub3">
+                <img src="a1.jpg" alt="">
+                <h2><a target="_blank" href="https://en.wikipedia.org/wiki/Airavatesvara_Temple">SHRI AIRAVATESVARA
+                        TEMPLE</a></h2>
+            </div>
+            <div class="sub4">
+                <img src="k.jpg" alt="">
+                <h2><a target="_blank" href="https://en.wikipedia.org/wiki/Kudalasangama">KUDAL SANGAMA TEMPLE</a></h2>
+            </div>
+        </section>
+
+        <div class="link">
+            <h1><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_Hindu_temples_in_India">CLICK HERE FOR LIST OF HINDU
+                    TEMPLE</a></h1>
+        </div>
+    </header>
+
+    <script>
+        var images = ["b2.jpg",
+            "bathu ki ladi.jpg",
+        ]
+
+        var i = 0;
+
+        function myslide() {
+            document.getElementById("slideimage").src = images[i];
+            if (i < (images.length - 1))
+                i++;
+            else
+                i = 0;
+        }
+        setInterval(myslide, 2000)
+
+        var images1 = ["h1.jpg",
+            "h2.jpg",
+        ]
+
+        var a = 0;
+
+        function myslide1() {
+            document.getElementById("slideimage1").src = images1[a];
+            if (a < (images1.length - 1))
+                a++;
+            else
+                a = 0;
+        }
+        setInterval(myslide1, 2000)          
+    </script>
+</body>
+
+</html>
